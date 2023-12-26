@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/db49115438.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USHouse</title>
+    <!--javascript codes-->
+    <script>
+        const menuBtn = document.querySelector('.mobile');
+        const navBtn = document.querySelector('.navmenu');
+
+        const mobilemenu = () => {
+            menuBtn.classList.toggle('active')
+            navBtn.classList.toggle('active')
+        };
+        const closemenu = () => {
+            navBtn.classList.toggle('active')
+        };
+
+    </script>
+</head>
+
+
+<body>
+    <!--Container-->
+    <div class="container">
+        <!--top Navbar-->
+        <div class="topnavbar" id="top">
+            <h3 class="intro">Welcome to USHouse</h3>
+            <p>Learn More</p>
+        </div>
+        <!-- end top Navbar-->
+        <!--start navbar-->
+        <div class="navbar">
+            <div>
+                <h1>USHouse</h1>
+            </div>
+            <div class="search">
+                <form>
+                    <div>
+                        <input type="text" placeholder="Search your House...">
+                    </div>
+                    <div>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="menu">
+                <ul class="navmenu">
+                    <li><a onclick="closemenu()" href="#listing" class="navlink">Listings</a></li>
+                    <li><a onclick="closemenu()" href="#featured" class="navlink">Featured</a></li>
+                    <li><a onclick="closemenu()" href="#popular" class="navlink">Popular</a></li>
+                </ul>
+                <div class="mobile" onclick="mobilemenu">
+                    <i class=fa-solid fa-bars </i>
+                </div>
+            </div>
+        </div>
+
+        <!--end navbar-->
+        <!-- start sort navbar-->
+        <div class="sortbar">
+            <div>
+                <i class="fa-solid fa-house-chimney"></i>
+                <p>House</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-snowflake"></i>
+                <p>Artic</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-rocket"></i>
+                <p>Space</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-tree"></i>
+                <p>Trees</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-building"></i>
+                <p>City</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-campground"></i>
+                <p>Camping</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <p>Beach</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-volleyball"></i>
+                <p>Games</p>
+            </div>
+        </div>
+        <!-- end sort navbar-->
+        <!--listing-->
+        <div class="listing" id="listing">
+            <!--description card-->
+            <div class="card">
+                <img alt="image" src="./images/1.jpg">
+                <div class="card-title">
+                    <h4>New York,New York</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$1100 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/2.jpg">
+                <div class="card-title">
+                    <h4>Los Angeles,California</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$710 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/3.jpg">
+                <div class="card-title">
+                    <h4>Chicago,Illinois</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$545 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/4.jpg">
+                <div class="card-title">
+                    <h4>Houston,Texas</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$691 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/5.jpg">
+                <div class="card-title">
+                    <h4>Phoenix,Arizona</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$880 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/6.jpg">
+                <div class="card-title">
+                    <h4>Philadelphia,Pennsylvania</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$551 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/7.jpg">
+                <div class="card-title">
+                    <h4>San Antonio,Texas</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$367 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/8.jpg">
+                <div class="card-title">
+                    <h4>San Diego,California</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$1000 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/9.jpg">
+                <div class="card-title">
+                    <h4>Jacksonville,Florida</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$960 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/10.jpg">
+                <div class="card-title">
+                    <h4>Columbus,Ohio</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$812 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/11.jpg">
+                <div class="card-title">
+                    <h4>Charlotte,North Carolina</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$749 night</span></p>
+            </div>
+            <div class="card">
+                <img alt="image" src="./images/12.jpg">
+                <div class="card-title">
+                    <h4>Las Vegas,Nevada</h4>
+                    <p>5.0<i class="fa-solid fa-star"></i></p>
+                </div>
+                <p><span class="gray">Hosted by Reality Group LLC</span></p>
+                <p><span class="gray">June 1-7</span></p>
+                <p><span class="gray">$456 night</span></p>
+            </div>
+
+        </div>
+        <!--end of listing-->
+        <!--featured-->
+        <div class="featured" id="featured">
+            <div class="title">
+                <h1>Featured</h1>
+            </div>
+            <div class="featured-wrapper">
+                <div class="main">
+                    <img src="./images/13.jpg" alt="image">
+                </div>
+                <div>
+                    <img src="./images/14.jpg" alt="image">
+                </div>
+                <div>
+                    <img src="./images/15.jpg" alt="image">
+                </div>
+                <div>
+                    <img src="./images/16.jpg" alt="image">
+                </div>
+                <div>
+                    <img src="./images/17.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+        <!--end of featured-->
+        <!--start popular-->
+        <div class="featured" id="popular">
+            <div class="title">
+                <h1>Popular</h1>
+            </div>
+            <div class="featured-wrapper">
+                <div class="main">
+                    <img src="./images/14.jpg" alt="image">
+                </div>
+                <div>
+                    <img src="./images/15.jpg" alt="image">
+                </div>
+                <div>
+                    <img src="./images/16.jpg" alt="image">
+                </div>
+                <div>
+                    <img src="./images/17.jpg" alt="image">
+                </div>
+                <div>
+                    <img src="./images/18.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+        <!--end of popular-->
+        <!--scroll Bar-->
+        <div class="center">
+            <a href="#top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+        <!--end of scroll bar-->
+        <!--start footer-->
+        <div class="footer">
+            <ul class="left-menu">
+                <li>USHouse</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>destinations</li>
+                <li>Phone : 0915xxxxxxx</li>
+                <i class="fa-brands fa-instagram"></i>
+            </ul>
+            <ul class="right-menu">
+                <li>Support</li>
+                <li>Contact</li>
+                <img src="./elaralogo.jpg" class="logo">
+            </ul>
+        </div>
+        <!--end of footer-->
+    </div>
+    <!--end container-->
+
+</body>
+
+
+
+
+
+</html>
